@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday My Love ❤️</title>
+
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+</head>
+
+<body>
+
+<!-- PASSWORD SCREEN -->
+<div id="password-screen">
+
+  <div class="password-box">
+    <h1>❤️ Private Love Page ❤️</h1>
+
+    <input type="password" id="password" placeholder="Enter Password">
+
+    <button onclick="checkPassword()">Unlock</button>
+
+    <p id="error"></p>
+  </div>
+
+</div>
+
+<!-- MAIN WEBSITE -->
+<div id="main-content">
+
+  <!-- MUSIC -->
+  <audio id="bgMusic" loop>
+    <source src="music.mp3.mp3" type="audio/mp3">
+  </audio>
+
+  <!-- INTRO -->
+  <section class="hero">
+
+    <div class="overlay"></div>
+
+    <div class="hero-content">
+      <h1>Happy Birthday Baby ❤️</h1>
+
+      <p id="typing"></p>
+
+      <button onclick="playMusic()">▶ Play Music</button>
+    </div>
+
+  </section>
+
+  <!-- TIMELINE -->
+  <section class="timeline">
+
+    <h2>Our Beautiful Memories ✨</h2>
+
+    <div class="memory">
+
+      <img src="photos 1.jpeg">
+
+      <div class="text">
+        <h3>The Day We Met</h3>
+        <p>
+          The best moment of my life started here ❤️
+        </p>
+      </div>
+
+    </div>
+
+    <div class="memory reverse">
+
+      <img src="photos 2.jpeg">
+
+      <div class="text">
+        <h3>Our First Date</h3>
+
+        <p>
+          I still remember your smile that day 💖
+        </p>
+
+      </div>
+
+    </div>
+
+    <div class="memory">
+
+      <img src="photos 3.jpeg">
+
+      <div class="text">
+
+        <h3>Our Precious Moments</h3>
+
+        <p>
+          Every moment with you feels magical ✨
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- SPECIAL MESSAGES -->
+
+<section class="letters">
+
+  <h2>Special Messages For You ❤️</h2>
+
+  <div class="letter-grid">
+
+    <button class="letter-card"
+    onclick="showMessage('love')">
+
+      A Message About My Love For You 💖
+
+    </button>
+
+    <button class="letter-card"
+    onclick="showMessage('future')">
+
+      A Message About Our Future ✨
+
+    </button>
+
+    <button class="letter-card"
+    onclick="showMessage('thanks')">
+
+      A Thank You Message ❤️
+
+    </button>
+
+  </div>
+
+</section>
+
+<!-- POPUP MESSAGE BOX -->
+
+<div id="popup">
+
+  <div class="popup-content">
+
+    <span class="close"
+    onclick="closePopup()">
+
+      ✖
+
+    </span>
+
+    <h3 id="popup-title"></h3>
+
+    <p id="popup-message"></p>
+
+  </div>
+
+</div>
+
+  <!-- LETTER MODAL -->
+  <div id="letterModal">
+
+    <div class="modal-content">
+
+      <span onclick="closeLetter()">✖</span>
+
+      <p id="letterText"></p>
+
+    </div>
+
+  </div>
+
+  <!-- VIDEO MOMENTS -->
+
+<section class="video-section">
+
+  <h2>Our Sweet Moments 🎥❤️</h2>
+
+  <div class="video-container">
+
+    <!-- Replace with your own video -->
+    <video controls>
+
+      <source src="videos/video 1.mp4"
+      type="video/mp4">
+
+    </video>
+
+  </div>
+
+  <p class="video-text">
+    Every moment with you is my favorite memory ❤️
+  </p>
+
+</section>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
